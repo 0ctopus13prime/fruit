@@ -103,10 +103,10 @@ add_subdirectory(src)
 if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
   # Do not exclude these from "make all" in debug mode, they must build.
   add_subdirectory(examples)
-  add_subdirectory(tests)
+  #add_subdirectory(tests)
 else()
   add_subdirectory(examples EXCLUDE_FROM_ALL)
-  add_subdirectory(tests)
+  #add_subdirectory(tests)
 endif()
 
 add_subdirectory(extras EXCLUDE_FROM_ALL)
